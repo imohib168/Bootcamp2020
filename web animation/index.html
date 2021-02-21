@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web Animation</title>
+
+    <style>
+        .shape {
+            background-color: #000;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+
+    <script>
+        window.addEventListener("load", function () {
+            var shapeElement = document.querySelector(".shape");
+            var frames = [
+                { background: "black", transform: "translateX(0px)" },
+                { background: "yellow", borderRadius: "10%" },
+                { background: "green", transform: "translateX(600px)", borderRadius: "0%" },
+            ]
+
+            var timing = {
+                duration: 2000,
+                delay: 1000,
+                iterations: Infinity,
+                direction: "alternate",
+            }
+
+            var shapeAnimate = shapeElement.animate(frames, timing);
+
+            document.querySelector(".play").addEventListener("click", function () {
+                shapeAnimate.play();
+            })
+
+            document.querySelector(".pause").addEventListener("click", function () {
+                shapeAnimate.pause();
+            })
+
+            document.querySelector(".reverse").addEventListener("click", function () {
+                shapeAnimate.reverse();
+            })
+
+            document.querySelector(".updatePlayRate").addEventListener("click", function () {
+                shapeAnimate.updatePlaybackRate(shapeAnimate.playbackRate * 1.1);
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="shape"></div>
+
+    <button class="play">Play</button>
+    <button class="pause">Pause</button>
+    <button class="reverse">Reverse</button>
+    <button class="updatePlayRate">Update Play Rate</button>
+</body>
+
+</html>

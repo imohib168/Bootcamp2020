@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <script>
+        var box = document.getElementById("box");
+
+        var frames = [
+            { transform: 'translate(0, 0)', background: 'darkcyan' },
+            { transform: 'translate(400px, 0)', background: 'red' },
+            { transform: 'translate(400px, 400px)', background: 'blue' },
+            { transform: 'translate(0, 400px)', background: 'red' },
+            { transform: 'translate(0, 0)', background: 'darkcyan' },
+        ];
+        var timing = {
+            duration: 5000,
+            iteration: 'infinity'
+        };
+
+        box.animate(frames, timing);
+    </script>
+</body>
+
+</html>
