@@ -2,8 +2,10 @@ language: node_js
 node_js:
   - "stable"
 
-before_install:
-  cd TDD/tdd-app/
+before_script: cd TDD/tdd-app/
+script:
+  - sbt compile
+  - sbt test
 
 script:
   - npm install
