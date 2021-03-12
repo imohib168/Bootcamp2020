@@ -3,8 +3,8 @@ import './App.css';
 function App() {
   return (
     <div>
-      Hello World
-      <input type="text" placeholder="Your Name..." />
+      Hello World <br />
+      <input type="text" placeholder="Your Name..." spellCheck="true" />
     </div>
   );
 }

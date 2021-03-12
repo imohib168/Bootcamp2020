@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "stable"
+
+before_script:
+  cd TDD/tdd_app/
+
+script:
+  - npm install
+  - npm test
+  - npm run build
+
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: sleepy-toothpaste.surge.sh
+  project: ./build/
+
+on:
+  branch: main
