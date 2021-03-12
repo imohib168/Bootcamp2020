@@ -7,7 +7,7 @@ cache:
     node_modules
 
 before_script:
-  cd ./tdd-app/
+  cd tdd-app/
 
 script:
   - npm install
