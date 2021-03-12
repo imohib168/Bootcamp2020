@@ -3,7 +3,7 @@ node_js:
   - "stable"
 
 script:
-  - cd TDD/tdd-app/
+  - cd TDD/tdd-app
   - npm install
   - npm test
   - npm run build
