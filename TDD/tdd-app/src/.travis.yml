@@ -2,9 +2,8 @@ language: node_js
 node_js:
   - "stable"
 
-before_script: cd TDD/tdd-app/
-
 script:
+  - cd TDD/tdd-app/
   - npm install
   - npm test
   - npm run build
