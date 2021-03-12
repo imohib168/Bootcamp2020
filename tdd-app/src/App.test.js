@@ -12,3 +12,9 @@ test('find input with placeholder', () => {
   const worldElement = renderResponse.getByPlaceholderText(/Your Name/i);
   expect(worldElement).toBeInTheDocument();
 });
+
+test('find Name', () => {
+  const renderResponse = render(<App />);
+  const worldElement = renderResponse.getByText(/Mohib ismail/i);
+  expect(worldElement).toBeInTheDocument();
+});

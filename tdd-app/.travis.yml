@@ -2,8 +2,9 @@ language: node_js
 node_js:
   - "stable"
 
-before_script:
-  - cd tdd-app/
+cache:
+  dependencies:
+    node_modules
 
 script:
   - npm install
