@@ -7,13 +7,10 @@ const urlsToCache = [
     '/asset-manifest.json',
     'images/logo.png',
     '/manifest.json',
-    // '/static/js/bundle.js',
-    // '/static/js/vendors~main.chunk.js',
-    // '/static/js/main.chunk.js',
-    '/static/media/bg.00ecbe2e.jpg'
-    // 'static/media/cover-min.f6a21fa1.jpg',
-    // 'static/js/2.a0125549.chunk.js',
-    // 'static/js/main.a563d53d.chunk.js'
+    '/static/media/bg.00ecbe2e.jpg',
+    'static/css/main.a48dfd3c.chunk.css',
+    'static/js/2.a7232e4c.chunk.js',
+    'static/js/main.ca85332f.chunk.js',
 ];
 
 const self = this;
