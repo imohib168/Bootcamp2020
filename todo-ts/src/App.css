@@ -1,0 +1,37 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, black, transparent), url('./Images/bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mainContainer {
+    background-color: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), transparent);
+    backdrop-filter: blur(6px);
+    width: 80vw;
+    height: 100%;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+    .mainContainer {
+        background-color: rgba(0, 0, 0, 0.6);
+        background: linear-gradient(to bottom right, rgb(0, 0, 0), transparent);
+        backdrop-filter: blur(6px);
+        width: 95vw;
+        height: 100%;
+    }
+}

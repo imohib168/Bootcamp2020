@@ -1,0 +1,95 @@
+.todoItems {
+    padding: 20px 0px;
+    width: 50%;
+}
+
+.todoItems li {
+    background: linear-gradient(to left, rgb(252, 187, 134), transparent);
+    margin: 10px 0px;
+    padding: 10px 8px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: rgb(182, 182, 91);
+    width: 100%;
+}
+
+.todoItems li:nth-child(4n + 1) {
+    background: linear-gradient(to left, rgb(75, 195, 235), transparent);
+    color: rgb(127, 127, 245);
+}
+
+.todoItems li:nth-child(4n + 2) {
+    background: linear-gradient(to left, rgb(248, 118, 138), transparent);
+    color: rgb(250, 67, 97);
+}
+
+.todoItems li:nth-child(4n + 3) {
+    background: linear-gradient(to left, lightgreen, transparent);
+    color: green;
+}
+
+.btnsContainer {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.todoItems li:nth-child(4n + 1) .btnsContainer button {
+    background: rgb(2, 116, 168);
+    color: rgb(205, 205, 218);
+}
+
+.todoItems li:nth-child(4n + 3) .btnsContainer button {
+    background: rgb(1, 139, 63);
+    color: rgb(255, 255, 255);
+}
+
+.todoItems li:nth-child(4n + 2) .btnsContainer button {
+    background-color: rgb(250, 100, 100);
+    color: white;
+}
+
+.btnsContainer button {
+    padding: 5px 10px;
+    background-color: rgb(247, 173, 76);
+    border: none;
+    color: rgb(231, 6, 6);
+    border-radius: 3px;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.todoItem {
+    color: lightgray;
+    width: 20vw;
+    overflow-wrap: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 1000px) {
+    .todoItems {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    .btnsContainer {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .btnsContainer button {
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .todoItem {
+        width: 35vw;
+        overflow-wrap: break-word;
+    }
+}
