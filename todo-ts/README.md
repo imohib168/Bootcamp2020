@@ -1,3 +1,10 @@
+Live Demo: https://to-do168.netlify.app/
+
+[![pas](https://img.shields.io/static/v1?&message=ProgressiveApp.Store&color=74b9ff&style=flat&label=Follow%20ToDo%20App%20by%20Mohib%20at)](https://progressiveapp.store/pwa/ToDo-App-by-Mohib)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3e433fcd-dc74-4abd-ab88-4375fcb1b08a/deploy-status)](https://app.netlify.com/sites/to-do168/deploys)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
