@@ -5,12 +5,12 @@ const urlsToCache = [
     '/',
     '/index.html',
     '/asset-manifest.json',
-    'images/logo.png',
     '/manifest.json',
+    'images/logo.png',
     '/static/media/bg.00ecbe2e.jpg',
-    'static/css/main.a48dfd3c.chunk.css',
-    'static/js/2.a7232e4c.chunk.js',
-    'static/js/main.ca85332f.chunk.js',
+    '/static/css/main.a48dfd3c.chunk.css',
+    '/static/js/2.a7232e4c.chunk.js',
+    '/static/js/main.ca85332f.chunk.js',
 ];
 
 const self = this;
