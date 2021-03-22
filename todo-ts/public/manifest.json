@@ -3,9 +3,9 @@
     "name": "TO-DO List App By Mohib",
     "icons": [
         {
-            "src": "images/logo.png",
+            "src": "/images/logo.png",
             "type": "image/png",
-            "sizes": "96x96"
+            "sizes": "1024x1024"
         }
     ],
     "start_url": ".",
