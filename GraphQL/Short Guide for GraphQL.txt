@@ -1,0 +1,18 @@
+Building GraphQL Server
+
+1) mkdir dir-name
+2) npm init --yes -- package.json
+3) yarn add apollo-server graphql / npm i apollo-server graphql
+4) touch index.js
+
+For Detecting Automatic Changes:
+yarn add nodemon
+
+Go to package.json and change
+
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+
+https://www.apollographql.com/docs/apollo-server/
+https://www.apollographql.com/docs/react/
